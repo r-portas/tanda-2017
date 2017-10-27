@@ -1,0 +1,39 @@
+.Header-header {
+  background-color: #363333;
+  padding: 20px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.Header-title {
+  font-size: 1.5em;
+
+}
+
+.Header-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Header-nav > li {
+    float: left;
+}
+
+.Header-nav > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+.Header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Header-selected {
+    background: #E16428;
+}
