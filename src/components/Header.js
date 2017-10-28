@@ -15,8 +15,7 @@ class Header extends Component {
     return (
       <div>
         <header className="Header-header">
-          <h1 className="Header-title">Welcome to the Hackathon Template!</h1>
-
+          <img className = "Header-logo" src="/logo.png"/>
           <div className="Header-row">
             <p>Logged in as: {this.props.user.name}</p>
 
