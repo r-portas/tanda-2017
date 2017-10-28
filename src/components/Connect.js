@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router';
 import "./Connect.css";
 
 class Connect extends Component {
@@ -22,6 +23,7 @@ class Connect extends Component {
 		this.renderHeaders = this.renderHeaders.bind(this);
 		this.renderCheckboxes = this.renderCheckboxes.bind(this);
 		this.handleChange = this.handleChange.bind(this);
+		this.submit = this.submit.bind(this);
 	}
 
 	handleChange(event) {
@@ -41,6 +43,10 @@ class Connect extends Component {
 		return Object.keys(this.state).map((time) => {
           return <td key={time}><label><input type="checkbox" name={time} checked={this.state[time]} onChange={this.handleChange}/></label></td>
 		});
+	}
+
+	submit() {
+		this.props.history.push("/whoisfree")
 	}
 
   render() {
@@ -68,10 +74,10 @@ class Connect extends Component {
           </tr>
           </tbody>
         </table>
-
+        <button className="Landing-login" onClick={this.submit}>Submit</button>
       </div>
     );
   }
 }
 
-export default Connect;
+export default withRouter(Connect);
