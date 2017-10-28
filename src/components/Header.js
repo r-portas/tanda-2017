@@ -19,7 +19,7 @@ class Header extends Component {
         <header className="Header-header">
           <img className = "Header-logo" src={logo} alt="Logo"/>
           <div className="Header-row">
-            <p>Logged in as: {this.props.user.name}</p>
+            <p className="Header-login-status">Logged in as: {this.props.user.name}</p>
 
             <ul className="Header-nav">
               <li>
