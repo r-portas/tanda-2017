@@ -1,0 +1,14 @@
+.Landing-section {
+    width: 80%;
+    margin: auto;
+}
+
+.Landing-login {
+    cursor: pointer;
+    border: none;
+    padding: 20px 100px;
+    background: #E16428;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}

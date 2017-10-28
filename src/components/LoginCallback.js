@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router'
 import { connect } from "react-redux";
 import { setAuthCode, fetchUser } from "../actions";
 import auth from "../util/auth";
@@ -14,16 +15,18 @@ class LoginCallback extends Component {
       code = auth.getCodeFromQueryString(qs);
       props.dispatch(setAuthCode(code));
       props.dispatch(fetchUser(code));
+
+      props.history.push("/get");
     }
   }
 
   render() {
     return (
       <div>
-        <h2>Main page</h2>
+        <h2>Logging in...</h2>
       </div>
     )
   }
 }
 
-export default connect()(LoginCallback);
+export default withRouter(connect()(LoginCallback));
