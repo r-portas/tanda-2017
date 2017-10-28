@@ -7,21 +7,20 @@ class LoginCallback extends Component {
   constructor(props) {
     super(props);
 
-    this.code = "";
+    let code = "";
 
     if (props && props.location && props.location.hash) {
       const qs = props.location.hash.substring(1);
-      this.code = auth.getCodeFromQueryString(qs);
-      props.dispatch(setAuthCode(this.code));
-      props.dispatch(fetchUser(this.code));
+      code = auth.getCodeFromQueryString(qs);
+      props.dispatch(setAuthCode(code));
+      props.dispatch(fetchUser(code));
     }
   }
 
   render() {
     return (
       <div>
-        <h2>Login callback</h2>
-        <p>Auth code: {this.code}</p>
+        <h2>Main page</h2>
       </div>
     )
   }

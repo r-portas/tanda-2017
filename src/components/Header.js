@@ -28,6 +28,9 @@ class Header extends Component {
                 <NavLink exact to="/user" activeClassName="Header-selected">User</NavLink>
               </li>
               <li>
+                <NavLink exact to="/get" activeClassName="Header-selected">Get Coffee!</NavLink>
+              </li>
+              <li>
                 <a onClick={this.login}>Login</a>
               </li>
             </ul>

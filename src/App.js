@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import { createStore, applyMiddleware } from "redux";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route
 } from "react-router-dom";
 
@@ -34,9 +34,9 @@ class App extends Component {
           <div className="App">
             <Header/>
 
+            <Route exact path="/" component={LoginCallback}/>
             <Route exact path="/user" component={User}/>
-            <Route exact path="/" component={ActiveUsers}/>
-            <Route path="/callback" component={LoginCallback}/>
+            <Route path="/get" component={ActiveUsers}/>
           </div>
         </Router>
       </Provider>
