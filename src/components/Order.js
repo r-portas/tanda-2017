@@ -1,24 +1,33 @@
 import React, { Component } from "react";
 
+import "./Order.css";
+
 class Order extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
-      users: {}
+      shops: [
+				{
+					name: "Wordies"
+				},
+				{
+					name: "Merlos"
+				},
+				{
+					name: "Lakeside"
+				}
+			]
     };
 
-    fetch("http://fouridian.com:3000")
-      .then((resp) => resp.json())
-      .then((data) => {
-        this.setState({ users: data });
-      });
+		this.renderShops = this.renderShops.bind(this);
+
   }
 
-  renderUsers() {
-    return Object.keys(this.state.users).map((user) => {
-      return <div>{user}</div>
+  renderShops() {
+    return this.state.shops.map((shop) => {
+      return <div className="Order-shop">{shop.name}</div>
     });
   }
 
@@ -26,7 +35,10 @@ class Order extends Component {
     return (
       <div>
         <h2>Order</h2>
-        { this.renderUsers() }
+				<div className="Order-shop-container">
+					{ this.renderShops() }
+				</div>
+
       </div>
     );
   }
