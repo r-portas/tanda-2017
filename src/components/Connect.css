@@ -5,9 +5,7 @@ table.paleOrangeRows {
   height: 200px;
   text-align: center;
   border-collapse: collapse;
-  position: absolute;
-  top:70%;
-  left:30%;
+  margin: auto;
 }
 table.paleOrangeRows td, table.paleOrangeRows th {
   border: 1px solid #FFFFFF;
@@ -38,4 +36,3 @@ table.paleOrangeRows thead th:first-child {
 table.paleOrangeRows input[type=checkbox] {
 	zoom: 1.5;
 }
-
