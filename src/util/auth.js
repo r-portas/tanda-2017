@@ -21,10 +21,10 @@ function getUser(accessToken) {
 
 function authenticate() {
 
-  let redirectUrl = window.location.origin + "/";
+  let redirectUrl = window.location.origin + "/callback/";
 
   if (process.env.PUBLIC_URL) {
-    redirectUrl = window.location.origin + process.env.PUBLIC_URL + "/";
+    redirectUrl = window.location.origin + process.env.PUBLIC_URL + "/callback/";
   }
 
   console.log(redirectUrl);
