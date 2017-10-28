@@ -3,10 +3,15 @@ import "./WhoIsFree.css";
 
 function User(props) {
 
+  let block = "user-block";
   let cn = "user-photo";
 
   if (props.coffeePhoto) {
     cn = "coffee-photo";
+  }
+
+  if (props.selected) {
+    block = "user-block user-selected";
   }
 
   return (
