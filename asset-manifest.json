@@ -1,9 +1,21 @@
 {
-  "main.css": "static/css/main.5638bae5.css",
-  "main.css.map": "static/css/main.5638bae5.css.map",
-  "main.js": "static/js/main.d9879aba.js",
-  "main.js.map": "static/js/main.d9879aba.js.map",
+  "main.css": "static/css/main.3fd80bae.css",
+  "main.css.map": "static/css/main.3fd80bae.css.map",
+  "main.js": "static/js/main.c6760e3a.js",
+  "main.js.map": "static/js/main.c6760e3a.js.map",
+  "static/media/Americano.png": "static/media/Americano.c7cffb40.png",
+  "static/media/Cappucino.png": "static/media/Cappucino.c7197126.png",
+  "static/media/Espresso.png": "static/media/Espresso.5cdd1756.png",
+  "static/media/Long Black.png": "static/media/Long Black.d6dd4f65.png",
+  "static/media/Viena.png": "static/media/Viena.010e1b2f.png",
+  "static/media/campos.png": "static/media/campos.81d86f11.png",
   "static/media/coffee.jpg": "static/media/coffee.7e6a9bc3.jpg",
   "static/media/cup.png": "static/media/cup.da56c268.png",
-  "static/media/logo.png": "static/media/logo.893a1b83.png"
+  "static/media/darwin.png": "static/media/darwin.d04a7fb8.png",
+  "static/media/girl.png": "static/media/girl.b16612d9.png",
+  "static/media/logo.png": "static/media/logo.893a1b83.png",
+  "static/media/merlos.png": "static/media/merlos.6ac280e7.png",
+  "static/media/roy.png": "static/media/roy.d2a3931d.png",
+  "static/media/shalini.png": "static/media/shalini.3b8ab606.png",
+  "static/media/sophia.jpg": "static/media/sophia.40074474.jpg"
 }
