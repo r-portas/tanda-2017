@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router';
 
 import User from "./User";
 
@@ -60,7 +61,7 @@ class Order extends Component {
 
 		this.renderShops = this.renderShops.bind(this);
     this.renderCoffee = this.renderCoffee.bind(this);
-
+    this.submit = this.submit.bind(this);
   }
 
   renderShops() {
@@ -77,6 +78,10 @@ class Order extends Component {
     });
   }
 
+  submit() {
+    this.props.history.push("/whoisfree");
+  }
+
   render() {
     return (
       <div>
@@ -90,10 +95,10 @@ class Order extends Component {
 					{ this.renderCoffee() }
 				</div>
 
-        <button className="Landing-login">Submit</button>
+        <button className="Landing-login" onClick={this.submit}>Submit</button>
       </div>
     );
   }
 }
 
-export default Order;
+export default withRouter(Order);
