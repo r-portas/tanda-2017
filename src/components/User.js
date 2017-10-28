@@ -4,7 +4,8 @@ import "./WhoIsFree.css";
 function User(props) {
   return (
     <div className="user-block">
-      <p>{props.name}</p>
+      <img className="user-photo" src={props.photo} alt="Photo"/>
+      <p className="user-name">{props.name}</p>
 
     </div>
   );

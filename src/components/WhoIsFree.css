@@ -15,9 +15,21 @@
 }
 
 .user-block {
+  display: flex;
+  align-items: center;
   background-color: white;
   border: solid 1px brown;
-  height: 4rem;
-  width: 10rem;
+  width: 12rem;
   margin: 1rem;
+  padding: 1rem;
+}
+
+.user-photo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.user-name {
+  margin-left: 2rem;
+  font-weight: bold;
 }

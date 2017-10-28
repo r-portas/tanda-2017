@@ -2,14 +2,46 @@ import React, { Component } from "react";
 import User from "./User"
 import "./WhoIsFree.css";
 
+import imgSophia from "../imgs/sophia.jpg";
+import imgRoy from "../imgs/roy.png";
+import imgShalini from "../imgs/shalini.png";
+import imgGirl from "../imgs/girl.png";
+
 class WhoIsFree extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      time1: ["Sophia", "Shalini", "Roy"],
-      time2: ["Anabelle", "Bradley", "Leggy"],
-      time3: ["Neha", "Anna", "Isha"],
+      time1: [{
+        name: "Sophia",
+        photo: imgSophia,
+      }, {
+        name: "Shalini",
+        photo: imgShalini,
+      }, {
+        name: "Roy",
+        photo: imgRoy,
+      }],
+      time2: [{
+        name: "Anabelle",
+        photo: imgGirl,
+      }, {
+        name: "Sophia",
+        photo: imgSophia,
+      }, {
+        name: "Roy",
+        photo: imgRoy,
+      }],
+      time3: [{
+        name: "Anabelle",
+        photo: imgGirl,
+      }, {
+        name: "Sophia",
+        photo: imgSophia,
+      }, {
+        name: "Shalini",
+        photo: imgShalini,
+      }],
       time: "time1",
     }
 
@@ -20,9 +52,9 @@ class WhoIsFree extends Component {
     this.setState({time: e.target.value})
   }
 
-  getUser (username) {
+  getUser (obj) {
     return (
-      <User name={username}/>
+      <User name={obj.name} photo={obj.photo}/>
     )
   }
 
