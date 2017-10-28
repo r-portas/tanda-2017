@@ -16,20 +16,22 @@
 
 .user-block {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: white;
-  border: solid 1px brown;
-  width: 12rem;
+  border: solid 1px white;
   margin: 1rem;
-  padding: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.4rem -0.2rem;
 }
 
 .user-photo {
-  height: 5rem;
-  width: 5rem;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 0.2rem;
 }
 
 .user-name {
-  margin-left: 2rem;
   font-weight: bold;
 }
