@@ -26,6 +26,9 @@ class Header extends Component {
                 <NavLink exact to="/" activeClassName="Header-selected">Home</NavLink>
               </li>
               <li>
+                <NavLink exact to="/connect" activeClassName="Header-selected">Connect</NavLink>
+              </li>
+              <li>
                 <NavLink exact to="/whoisfree" activeClassName="Header-selected">Who Is Free?</NavLink>
               </li>
               <li>

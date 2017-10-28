@@ -37,7 +37,7 @@ class App extends Component {
             <Header/>
             <div className="center-layout">
               <Route exact path="/" component={Landing}/>
-               <Route exact path="/" component={Connect}/>
+               <Route exact path="/connect" component={Connect}/>
               <Route exact path="/whoisfree" component={WhoIsFree}/>
               <Route exact path="/get" component={ActiveUsers}/>
               <Route path="/callback" component={LoginCallback}/>
