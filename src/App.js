@@ -13,8 +13,7 @@ import reducers from "./reducers";
 
 // TODO: refactor imports
 import Header from "./components/Header";
-import User from "./components/User";
-import Connect from "./components/Connect";
+import WhoIsFree from "./components/WhoIsFree";
 import Landing from "./components/Landing";
 import ActiveUsers from "./components/ActiveUsers";
 import LoginCallback from "./components/LoginCallback";
@@ -34,12 +33,12 @@ class App extends Component {
         <Router basename={process.env.PUBLIC_URL}>
           <div className="App">
             <Header/>
-
-            <Route exact path="/" component={Landing}/>
-            <Route exact path="/connect" component={Connect}/>
-            <Route exact path="/user" component={User}/>
-            <Route exact path="/get" component={ActiveUsers}/>
-            <Route path="/callback" component={LoginCallback}/>
+            <div className="center-layout">
+              <Route exact path="/" component={Landing}/>
+              <Route exact path="/whoisfree" component={WhoIsFree}/>
+              <Route exact path="/get" component={ActiveUsers}/>
+              <Route path="/callback" component={LoginCallback}/>
+            </div>
           </div>
         </Router>
       </Provider>
