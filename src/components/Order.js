@@ -7,6 +7,9 @@ import cap from "../imgs/coffee/Cappucino.png";
 import amer from "../imgs/coffee/Americano.png";
 import espr from "../imgs/coffee/Espresso.png";
 import viena from "../imgs/coffee/Viena.png";
+import darwin from "../imgs/darwin.png";
+import campos from "../imgs/campos.png";
+import merlos from "../imgs/merlos.png";
 
 import "./Order.css";
 
@@ -18,13 +21,16 @@ class Order extends Component {
     this.state = {
       shops: [
 				{
-					name: "Wordies"
+					name: "Wordies",
+          photo: campos
 				},
 				{
-					name: "Merlos"
+					name: "Merlos",
+          photo: merlos
 				},
 				{
-					name: "Lakeside"
+					name: "Darwin's",
+          photo: darwin
 				}
       ],
       coffee: [
@@ -59,7 +65,7 @@ class Order extends Component {
 
   renderShops() {
     return this.state.shops.map((shop) => {
-      return <div key={shop.name} className="Order-shop">{shop.name}</div>
+      return <User key={shop.name} photo={shop.photo} name={shop.name} />
     });
   }
 
