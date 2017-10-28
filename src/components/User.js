@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import "./User.css";
+import "./WhoIsFree.css";
 
-class User extends Component {
-  render() {
-    return (
-      <div>
-        <p>Select your avaiablity!</p>
-        
-      </div>
-    );
-  }
+function User(props) {
+  return (
+    <div className="user-block">
+      <p>{props.name}</p>
+
+    </div>
+  );
 }
 
 export default User;
