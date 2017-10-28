@@ -1,10 +1,7 @@
 .Header-header {
   background-color: #363333;
-  background: url("/COFFEE-BEANS-YO.jpg") no-repeat center center fixed;
-  /*background-size: 1515px 325px; */
+  background: url(../imgs/coffee.jpg) no-repeat center center fixed;
   background-size: cover;
-/* background-size: auto;
-  background-repeat: no-repeat;*/
   padding: 20px;
   padding-bottom: 0px;
   color: white;
@@ -53,4 +50,14 @@
 .Header-logo {
   height: 250px;
   padding: 35px;
- }
+}
+
+.Header-link {
+    cursor: pointer;
+    -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background 0.5s;
+}
+
+.Header-link:hover {
+    background: #363333;
+}

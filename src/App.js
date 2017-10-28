@@ -14,7 +14,8 @@ import reducers from "./reducers";
 // TODO: refactor imports
 import Header from "./components/Header";
 import User from "./components/User";
-import Hello from "./components/Hello";
+import Connect from "./components/Connect";
+import Landing from "./components/Landing";
 import ActiveUsers from "./components/ActiveUsers";
 import LoginCallback from "./components/LoginCallback";
 
@@ -34,8 +35,10 @@ class App extends Component {
           <div className="App">
             <Header/>
 
+            <Route exact path="/" component={Landing}/>
+            <Route exact path="/connect" component={Connect}/>
             <Route exact path="/user" component={User}/>
-            <Route exact path="/" component={ActiveUsers}/>
+            <Route exact path="/get" component={ActiveUsers}/>
             <Route path="/callback" component={LoginCallback}/>
           </div>
         </Router>
