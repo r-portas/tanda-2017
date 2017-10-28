@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import User from "./User";
+
 import longBlack from "../imgs/coffee/Long Black.png";
 import cap from "../imgs/coffee/Cappucino.png";
 import amer from "../imgs/coffee/Americano.png";
@@ -57,16 +59,15 @@ class Order extends Component {
 
   renderShops() {
     return this.state.shops.map((shop) => {
-      return <div className="Order-shop">{shop.name}</div>
+      return <div key={shop.name} className="Order-shop">{shop.name}</div>
     });
   }
 
   renderCoffee() {
     return this.state.coffee.map((coffee) => {
-      return <div className="Order-shop">
-        <p>{coffee.name}</p>
-        <img className="Order-coffee-image" src={coffee.img}/>
-      </div>
+      return (
+        <User coffeePhoto key={coffee.name} photo={coffee.img} name={coffee.name} />
+      )
     });
   }
 
@@ -83,6 +84,7 @@ class Order extends Component {
 					{ this.renderCoffee() }
 				</div>
 
+        <button className="Landing-login">Submit</button>
       </div>
     );
   }

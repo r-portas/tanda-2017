@@ -32,6 +32,11 @@
   border-radius: 0.2rem;
 }
 
+.coffee-photo {
+  width: 9rem;
+  border-radius: 0.2rem;
+}
+
 .user-name {
   font-weight: bold;
 }
