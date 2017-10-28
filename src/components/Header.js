@@ -32,7 +32,7 @@ class Header extends Component {
                 <NavLink exact to="/whoisfree" activeClassName="Header-selected">Who Is Free?</NavLink>
               </li>
               <li>
-                <NavLink exact to="/get" activeClassName="Header-selected">Get Coffee!</NavLink>
+                <NavLink exact to="/get" activeClassName="Header-selected">Order Coffee!</NavLink>
               </li>
               <li>
                 <a className="Header-link" onClick={this.login}>Login</a>

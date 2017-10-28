@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class ActiveUsers extends Component {
+class Order extends Component {
 
   constructor(props) {
     super(props);
@@ -25,11 +25,11 @@ class ActiveUsers extends Component {
   render() {
     return (
       <div>
-        <h2>Active Users</h2>
+        <h2>Order</h2>
         { this.renderUsers() }
       </div>
     );
   }
 }
 
-export default ActiveUsers;
+export default Order;
