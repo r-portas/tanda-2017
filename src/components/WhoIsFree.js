@@ -75,8 +75,8 @@ class WhoIsFree extends Component {
           <h2>Who's Available</h2>
           <select onChange={this.handleChange}>
             <option value="time1">Now</option>
-            <option value="time2">1pm</option>
-            <option value="time3">2pm</option>
+            <option value="time2">7pm</option>
+            <option value="time3">8pm</option>
           </select>
         </div>
         <div className="users-container">

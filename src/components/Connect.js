@@ -8,17 +8,17 @@ class Connect extends Component {
 		super(props);
 
 		this.state = {
-			"7am": false,
-			"8am": false,
-			"9am": false,
-			"10am": false,
 			"11am": false,
 			"12pm": false,
 			"1pm": false,
 			"2pm": false,
 			"3pm": false,
 			"4pm": false,
-			"5pm": false
+			"5pm": false,
+			"6pm": false,
+			"7pm": false,
+			"8pm": false,
+			"9pm": false
 		}
 
 		this.renderHeaders = this.renderHeaders.bind(this);
