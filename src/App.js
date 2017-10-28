@@ -14,6 +14,7 @@ import reducers from "./reducers";
 // TODO: refactor imports
 import Header from "./components/Header";
 import Connect from "./components/Connect";
+// import User from "./components/User";
 import Landing from "./components/Landing";
 import ActiveUsers from "./components/ActiveUsers";
 import LoginCallback from "./components/LoginCallback";
