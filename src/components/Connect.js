@@ -7,16 +7,17 @@ class Connect extends Component {
 		super(props);
 
 		this.state = {
-			"7am-8am": false,
-			"8am-9am": false,
-			"9am-10am": false,
-			"10am-11am": false,
-			"11am-12pm": false,
-			"12pm-1pm": false,
-			"1pm-2pm": false,
-			"2pm-3pm": false,
-			"4pm-5pm": false,
-			"5pm-6pm": false
+			"7am": false,
+			"8am": false,
+			"9am": false,
+			"10am": false,
+			"11am": false,
+			"12pm": false,
+			"1pm": false,
+			"2pm": false,
+			"3pm": false,
+			"4pm": false,
+			"5pm": false
 		}
 
 		this.renderHeaders = this.renderHeaders.bind(this);
@@ -49,8 +50,7 @@ class Connect extends Component {
         <h2>Connect with your co-workers!</h2>
 
         <p style={{width: "80%", margin: "auto"}}>
-          Brew-tiful allows you to connect with your co-workers through
-          the Tanda system, allowing you to form groups with peoples who do the same shifts as you or who work in the same department.
+          Select what times you are available today to get coffee, and Brew-tiful will notify your friends.
         </p>
 
         <table className="paleOrangeRows">
@@ -60,7 +60,7 @@ class Connect extends Component {
 						{ this.renderHeaders() }
           </tr>
           </thead>
-        
+
           <tbody>
           <tr>
           <td>Please select your avaiablity</td>

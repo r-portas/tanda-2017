@@ -1,11 +1,10 @@
 table.paleOrangeRows {
-  font-family: "Times New Roman", Times, serif;
   border: 1px solid #FFFFFF;
   width: 350px;
   height: 200px;
   text-align: center;
   border-collapse: collapse;
-  margin: auto;
+  margin: 2rem auto;
 }
 table.paleOrangeRows td, table.paleOrangeRows th {
   border: 1px solid #FFFFFF;
@@ -27,6 +26,7 @@ table.paleOrangeRows thead th {
   color: #000000;
   text-align: center;
   border-left: 2px solid #FFFFFF;
+  padding: 1rem;
 }
 
 table.paleOrangeRows thead th:first-child {

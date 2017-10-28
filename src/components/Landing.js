@@ -10,7 +10,7 @@ class Landing extends Component {
         <h2>Do you ever feel like just having a coffee break with your colleagues?</h2>
         <h4>Is it frustrating not knowing when they are free for a coffee break?</h4>
         <p>
-          Don’t worry! It’s a brew-tiful day!
+          Don’t worry! It’s a Brew-tiful Day!
         </p>
         <p>
           You can now easily connect with your colleagues and organise a coffee break with the simple use of this web app.
@@ -22,15 +22,8 @@ class Landing extends Component {
         </p>
 
         <button className="Landing-login" onClick={this.login}>Login via Google</button>
-
-        <h2>Connect with your co-workers!</h2>
-
-        <p>
-          Brew-tiful allows you to connect with your co-workers through
-          the Tanda system, allowing you to form groups with peoples who do the same shifts as you or who work in the same department.
-        </p>
-
-        <img src={cup} style={{height: "80px"}}/>
+        <br/>
+        <img src={cup} style={{margin: "1rem", height: "80px"}}/>
       </div>
     )
   }

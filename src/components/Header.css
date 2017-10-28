@@ -45,6 +45,7 @@
 
 .Header-selected {
     background: #E16428;
+    transition: all 0.4s;
 }
 
 .Header-logo {
