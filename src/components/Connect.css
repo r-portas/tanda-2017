@@ -5,6 +5,9 @@ table.paleOrangeRows {
   height: 200px;
   text-align: center;
   border-collapse: collapse;
+  position: absolute;
+  top:70%;
+  left:30%;
 }
 table.paleOrangeRows td, table.paleOrangeRows th {
   border: 1px solid #FFFFFF;
@@ -14,10 +17,10 @@ table.paleOrangeRows tbody td {
   font-size: 13px;
 }
 table.paleOrangeRows tr:nth-child(even) {
-  background: #F5A973;
+  background: #FA7F39;
 }
 table.paleOrangeRows thead {
-  background: #F5A973;
+  background: #E16428;
   border-bottom: 5px solid #FFFFFF;
 }
 table.paleOrangeRows thead th {
@@ -27,17 +30,12 @@ table.paleOrangeRows thead th {
   text-align: center;
   border-left: 2px solid #FFFFFF;
 }
+
 table.paleOrangeRows thead th:first-child {
   border-left: none;
 }
 
-table.paleOrangeRows tfoot {
-  font-size: 14px;
-  font-weight: bold;
-  color: #333333;
-  background: #F5A973;
-  border-top: 3px solid #444444;
+table.paleOrangeRows input[type=checkbox] {
+	zoom: 1.5;
 }
-table.paleOrangeRows tfoot td {
-  font-size: 14px;
-}
+
