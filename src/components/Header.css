@@ -52,6 +52,17 @@
   padding: 35px;
 }
 
+@media screen and (max-width: 600px) {
+    .Header-logo {
+        height: auto;
+        width: 80%;
+    }
+
+    .Header-login-status {
+        display: none;
+    }
+}
+
 .Header-link {
     cursor: pointer;
     -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */

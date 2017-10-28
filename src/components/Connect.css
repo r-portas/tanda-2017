@@ -30,6 +30,12 @@ table.paleOrangeRows thead th {
   text-align: center;
   border-left: 2px solid #FFFFFF;
 }
+
 table.paleOrangeRows thead th:first-child {
   border-left: none;
 }
+
+table.paleOrangeRows input[type=checkbox] {
+	zoom: 1.5;
+}
+
