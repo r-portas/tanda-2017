@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router';
 import User from "./User"
 import "./WhoIsFree.css";
 
@@ -46,6 +47,7 @@ class WhoIsFree extends Component {
     }
 
     this.handleChange = this.handleChange.bind(this)
+    this.submit = this.submit.bind(this);
   }
 
   handleChange (e) {
@@ -54,7 +56,7 @@ class WhoIsFree extends Component {
 
   getUser (obj) {
     return (
-      <User name={obj.name} photo={obj.photo}/>
+      <User selected name={obj.name} photo={obj.photo}/>
     )
   }
 
@@ -66,6 +68,10 @@ class WhoIsFree extends Component {
     } else {
       return this.state.time3
     }
+  }
+
+  submit() {
+    this.props.history.push("/get")
   }
 
   render () {
@@ -82,9 +88,11 @@ class WhoIsFree extends Component {
         <div className="users-container">
           {this.getTime().map(x => this.getUser(x))}
         </div>
+
+        <button className="Landing-login" onClick={this.submit}>Submit</button>
       </div>
     );
   }
 }
 
-export default WhoIsFree;
+export default withRouter(WhoIsFree);
