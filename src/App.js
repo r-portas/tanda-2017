@@ -15,6 +15,7 @@ import reducers from "./reducers";
 import Header from "./components/Header";
 import User from "./components/User";
 import Hello from "./components/Hello";
+import ActiveUsers from "./components/ActiveUsers";
 import LoginCallback from "./components/LoginCallback";
 
 const store = createStore(
@@ -34,7 +35,7 @@ class App extends Component {
             <Header/>
 
             <Route exact path="/user" component={User}/>
-            <Route exact path="/" component={Hello}/>
+            <Route exact path="/" component={ActiveUsers}/>
             <Route path="/callback" component={LoginCallback}/>
           </div>
         </Router>

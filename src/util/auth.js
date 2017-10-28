@@ -20,12 +20,19 @@ function getUser(accessToken) {
 }
 
 function authenticate() {
+
+  let redirectUrl = window.location.origin + '/callback';
+
+  if (process.env.PUBLIC_URL) {
+    redirectUrl = window.location.origin + process.env.PUBLIC_URL + '/callback';
+  }
+
   const params = new URLSearchParams();
   params.append('client_id', process.env.REACT_APP_GOOGLE_CLIENT_ID);
   params.append('scope', 'profile');
   params.append('include_granted_scopes', 'true');
   params.append('response_type', 'token');
-  params.append('redirect_uri', window.location.origin + '/callback');
+  params.append('redirect_uri', redirectUrl);
 
 
   window.location.replace(process.env.REACT_APP_AUTH_URL + params.toString());
