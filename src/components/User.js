@@ -27,7 +27,7 @@ class User extends Component {
 			<tbody>
 			
 			<tr>
-			<td>Select your avaiablity</td>
+			<td>Please select your avaiablity</td>
 			<td><label><input type="checkbox" /></label></td>
 			<td><label><input type="checkbox" /></label></td>
 			<td><label><input type="checkbox" /></label></td>
